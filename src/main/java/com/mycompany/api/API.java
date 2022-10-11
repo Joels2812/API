@@ -15,7 +15,8 @@ public class API {
     public static void main(String[] args) throws Exception {
       APIsms sms = new APIsms();
       ///sentSms("String username,String password, String number, String message) username y password fijos
-      ///sms.sentSms("joels2812","Padrinos2812","+50660101068","Hola");
+      sms.sentSms("83619382","Recordar el pago pendiente de 13000 colones. BNMovil");
+      ///
       APIemail email = new APIemail();
       /// sentEmail(String projectName, String namePersonLog, String email, String detail, String date)
       ///email.sentEmail("Progra 1","Joel","joelledez2812@gmail.com","Logre enviar el video", "10/7/2022");

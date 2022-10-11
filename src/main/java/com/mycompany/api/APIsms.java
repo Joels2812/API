@@ -11,17 +11,16 @@ import java.io.*;
  * @author js802
  */
 public class APIsms {
-  public void sentSms(String username,String password, String number, String message){
+  public void sentSms(String number,String projectName,String email){
     try{
       // This URL is used for sending messages
       String myURI = "https://api.bulksms.com/v1/messages";
-
-      // change these values to match your own account
-      String myUsername = ""+username+"";
-      String myPassword = ""+password+"";
+      String myUsername = "joels2812";
+      String myPassword = "Padrinos2812";
+      String message = "Notificacion de una nueva entrada de bitacora a: " +email+", del proyecto: "+projectName;
 
       // the details of the message we want to send
-      String myData = "{to: \""+number+"\", encoding: \"UNICODE\", body: \""+message+"\"}";
+      String myData = "{to: \""+506+number+"\", encoding: \"UNICODE\", body: \""+message+"\"}";
 
       // if your message does not contain unicode, the "encoding" is not required:
       // String myData = "{to: \"1111111\", body: \"Hello Mr. Smith!\"}";
